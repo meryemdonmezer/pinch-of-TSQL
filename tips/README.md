@@ -12,7 +12,7 @@
 ```SQL
 SELECT '{' + STRING_AGG( '"' + ResourceKey + '":"' + STRING_ESCAPE(ResourceValue,'json') + '"' ,',') + '}' as KeyValue 
 FROM @LanguageResource
-WHERE flag = 'tr-TR'
+WHERE flag = 'en-US'
 ```
 ### Result : 
 ```json
