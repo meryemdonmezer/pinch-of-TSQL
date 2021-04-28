@@ -52,7 +52,6 @@ ORDER BY Level
 |8|7|C#|Technologies / Backend / C#|/1/7/8/|0x5CF440|
 |9|7|Java|Technologies / Backend / Java|/1/7/9/|0x5CF4C0|
 
-* * *
 
 # SQL to "i18n Locale JSON Object"
 * * *
