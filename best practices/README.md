@@ -37,7 +37,7 @@ ORDER BY LevelById
 ```
 
 ### Result:
-|Id|ParentId|Title|LevelByTitle|LevelById|HierarchyId|
+|Id|ParentId|Title|Breadcrumb|LevelById|HierarchyId|
 |---|---|---|---|---|---|
 |1|0|Technologies|Technologies|/1/|0x58|
 |2|1|Frontend|Technologies / Frontend|/1/2/|0x5B40|

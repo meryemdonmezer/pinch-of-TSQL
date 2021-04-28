@@ -13,18 +13,18 @@ INSERT INTO @Categories VALUES
 		(10,7,'Python');
 
 WITH Tree AS(
-SELECT *, LevelById = '/' + CAST(Parent.Id as nvarchar(max)) + '/', LevelByTitle = CAST(Parent.Title as nvarchar(max))
+SELECT *, LevelById = '/' + CAST(Parent.Id as nvarchar(max)) + '/', Breadcrumb = CAST(Parent.Title as nvarchar(max))
 FROM @Categories as Parent
 WHERE ParentId = 0
 UNION ALL
-SELECT Child.*, LevelById = LevelById + CAST(Child.Id as varchar) + '/', LevelByTitle = LevelByTitle + ' / ' + Child.Title
+SELECT Child.*, LevelById = LevelById + CAST(Child.Id as varchar) + '/', Breadcrumb = Breadcrumb + ' / ' + Child.Title
 FROM Tree as Parent
 JOIN @Categories as Child ON Child.ParentId = Parent.Id
 )
 SELECT Tree.Id,
 Tree.ParentId,
 Tree.Title,
-Tree.LevelByTitle,
+Tree.Breadcrumb,
 Tree.LevelById,
 CAST(LevelById as hierarchyid) as HierarchyId FROM Tree
 ORDER BY LevelById
