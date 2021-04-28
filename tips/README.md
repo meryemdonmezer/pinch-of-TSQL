@@ -4,16 +4,18 @@
 ### SQL Dataset :
 |ResourceKey|ResourceValue|flag|
 |---|---|---|
-|hello|hello|en-US|
-|hello|merhaba|tr-TR|
+|helloWorld|Hello World|en-US|
+|hello|Hello|en-US|
+|helloWorld|Merhaba Dünya|tr-TR|
+|hello|Merhaba|tr-TR|
 ### Query : 
 ```SQL
-SELECT '{' + STRING_AGG( '"' + ResourceKey + '":"' + STRING_ESCAPE(ResourceValue,'json') + '"' ,',') + '}' as attributes 
+SELECT '{' + STRING_AGG( '"' + ResourceKey + '":"' + STRING_ESCAPE(ResourceValue,'json') + '"' ,',') + '}' as KeyValue 
 FROM @LanguageResource
 WHERE flag = 'tr-TR'
 ```
 ### Result : 
 ```json
-{"hello":"hello","hello":"merhaba"}
+{"helloWorld":"Hello World","hello":"Hello"}
 ```
 * * *
