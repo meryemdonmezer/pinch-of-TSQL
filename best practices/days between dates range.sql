@@ -1,0 +1,15 @@
+DECLARE @StartDate date = '2021-04-22',
+@EndDate date = '2021-05-22';
+
+WITH CTE AS(
+	SELECT DATE = @StartDate, DAY = 1
+	UNION ALL
+	SELECT DATE = DATEADD(DAY, 1, DATE), DAY = DAY+1
+	FROM CTE
+	WHERE DATE < @EndDate
+)
+SELECT DATE , DAY 
+FROM CTE
+WHERE @StartDate IS NOT NULL 
+AND @EndDate IS NOT NULL
+OPTION (maxrecursion 0)
