@@ -1,4 +1,5 @@
 # Id & ParentId to Leveled Result (Breadcrumb , Level and HierarchyId)
+* * *
 
 ### Sample data :
 ```SQL
@@ -54,6 +55,8 @@ ORDER BY Level
 * * *
 
 # SQL to "i18n Locale JSON Object"
+* * *
+
 ### Sample data : 
 ```SQL
 DECLARE @LanguageResource table (ResourceKey varchar(255), ResourceValue varchar(255), flag varchar(5))
