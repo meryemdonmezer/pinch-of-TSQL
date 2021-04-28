@@ -32,7 +32,8 @@ Tree.ParentId,
 Tree.Title,
 Tree.Breadcrumb,
 Tree.Level,
-CAST(Level as hierarchyid) as HierarchyId FROM Tree
+CAST(Level as hierarchyid) as HierarchyId 
+FROM Tree
 ORDER BY Level
 ```
 
