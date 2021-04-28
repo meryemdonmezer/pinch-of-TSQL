@@ -1,0 +1,3 @@
+select 
+    '{' + STRING_AGG( '"' + ResourceKey + '":"' + STRING_ESCAPE(ResourceValue,'json') + '"' ,',') + '}' as attributes
+from LanguageResource
