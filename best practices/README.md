@@ -1,6 +1,5 @@
-# A collapsible section with markdown
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Nested datas to Breadcrumb, Level and Hierarchy </summary>
 	
 ### Sample data :
 ```SQL
@@ -56,9 +55,9 @@ ORDER BY Level
 
 </details>
 
-# SQL to "i18n Locale JSON Object"
-* * *
-
+<details>
+  <summary>to Key / Value JSON Object </summary>
+	
 ### Sample data : 
 ```SQL
 DECLARE @LanguageResource table (ResourceKey varchar(255), ResourceValue varchar(255), flag varchar(5))
@@ -85,4 +84,4 @@ WHERE flag = 'en-US'
 ```json
 {"helloWorld":"Hello World","hello":"Hello"}
 ```
-* * *
+</details>
