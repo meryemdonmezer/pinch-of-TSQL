@@ -1,5 +1,5 @@
 <details>
-  <summary>Nested datas to Breadcrumb, Level and Hierarchy </summary>
+  <summary>to Breadcrumb, Level and Hierarchy </summary>
 	
 ### Sample data :
 ```SQL
