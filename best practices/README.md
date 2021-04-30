@@ -1,6 +1,7 @@
-# Id & ParentId to Leveled Result (Breadcrumb , Level and HierarchyId)
-* * *
-
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+	
 ### Sample data :
 ```SQL
 DECLARE @Categories table (Id int, ParentId int, Title varchar(25))
@@ -52,6 +53,8 @@ ORDER BY Level
 |8|7|C#|Technologies / Backend / C#|/1/7/8/|0x5CF440|
 |9|7|Java|Technologies / Backend / Java|/1/7/9/|0x5CF4C0|
 
+
+</details>
 
 # SQL to "i18n Locale JSON Object"
 * * *
