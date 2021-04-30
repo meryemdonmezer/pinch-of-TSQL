@@ -1,5 +1,5 @@
 <details>
-  <summary>to Breadcrumb, Level and Hierarchy </summary>
+  <summary>"Nested data" to "Breadcrumb, Level and Hierarchy" </summary>
 	
 ### Sample data :
 ```SQL
@@ -56,7 +56,7 @@ ORDER BY Level
 </details>
 
 <details>
-  <summary>to Key / Value JSON Object </summary>
+  <summary>"Column" to "Key/Value JSON Pair" </summary>
 	
 ### Sample data : 
 ```SQL
