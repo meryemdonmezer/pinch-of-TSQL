@@ -1,6 +1,6 @@
-# Id & ParentId to Leveled Result (Breadcrumb , Level and HierarchyId)
-* * *
-
+<details>
+  <summary>"Nested data" to "Breadcrumb, Level and Hierarchy" </summary>
+	
 ### Sample data :
 ```SQL
 DECLARE @Categories table (Id int, ParentId int, Title varchar(25))
@@ -52,10 +52,12 @@ ORDER BY Level
 |8|7|C#|Technologies / Backend / C#|/1/7/8/|0x5CF440|
 |9|7|Java|Technologies / Backend / Java|/1/7/9/|0x5CF4C0|
 
-
-# SQL to "i18n Locale JSON Object"
 * * *
+</details>
 
+<details>
+  <summary>"Column" to "JSON Key/Value Pair" </summary>
+	
 ### Sample data : 
 ```SQL
 DECLARE @LanguageResource table (ResourceKey varchar(255), ResourceValue varchar(255), flag varchar(5))
@@ -83,3 +85,4 @@ WHERE flag = 'en-US'
 {"helloWorld":"Hello World","hello":"Hello"}
 ```
 * * *
+</details>
