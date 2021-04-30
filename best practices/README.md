@@ -1,7 +1,7 @@
 <details>
   <summary>"Nested data" to "Breadcrumb, Level and Hierarchy" </summary>
 	
-Sample data :
+### Sample data :
 ```SQL
 DECLARE @Categories table (Id int, ParentId int, Title varchar(25))
 
