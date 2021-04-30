@@ -56,7 +56,7 @@ ORDER BY Level
 </details>
 
 <details>
-  <summary>"Column" to "Key/Value JSON Pair" </summary>
+  <summary>"Column" to "JSON Key/Value Pair" </summary>
 	
 ### Sample data : 
 ```SQL
